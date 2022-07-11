@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"/>
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <%- include("./partials/header") %>
+    
+    <section id="welcome-section" class="welcome-section">
+        <h1>Hi I am Bao</h1>
+        <p>a web developer</p>
+    </section>
+    
+    <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">
+            These are some of my projects
+        </h2>
+        <div class="projects-grid">
+            <a href="/projects?name=snake" target="_blank" class="project project-tile">
+                <img class="project-image" src="/img/snake.png" alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Snake Game
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <%- include("./partials/footer") %>
+</body>
+</html>
